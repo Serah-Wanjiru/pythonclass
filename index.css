@@ -1,0 +1,100 @@
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .watch {
+    width: 30%;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .watch:hover {
+    transform: scale(1.1);
+  }
+
+  .rotating-watch {
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .product-section {
+    background-color: #f8f8f8;
+  }
+  
+  .watch {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .watch:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .buy-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .buy-button:hover {
+    background-color: #0062cc;
+  }
+
+  .watch h3 {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .watch p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  .watchtext{
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 768px) {
+  .product-section {
+    justify-content: center;
+  }
+
+  .watch {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+  .product-section {
+    justify-content: center;
+  }
+
+  .watch {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}
